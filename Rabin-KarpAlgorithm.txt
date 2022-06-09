@@ -1,0 +1,5 @@
+Rabin-Karp Algorithm for Pattern Searching
+
+Rabin-Karp algorithm also slides the pattern one by one. But unlike the Naive algorithm, Rabin Karp algorithm matches the hash value of the pattern with the hash value of current substring of text, and if the hash values match then only it starts matching individual characters. So Rabin Karp algorithm needs to calculate hash values for following strings.
+1) Pattern itself. 
+2) All the substrings of the text of length m. 

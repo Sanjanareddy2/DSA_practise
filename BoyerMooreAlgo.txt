@@ -1,0 +1,20 @@
+Moore algorithm also preprocesses the pattern. 
+Boyer Moore is a combination of the following two approaches. 
+1) Bad Character Heuristic 
+2) Good Suffix Heuristic 
+ it uses greatest offset suggested by the two heuristics at every step.
+Boyer Moore algorithm starts matching from the last character of the pattern.
+
+Bad Character Heuristic
+
+The idea of bad character heuristic is simple. The character of the text which doesn’t match
+ with the current character of the pattern is called the Bad Character. Upon mismatch, we shift the pattern until – 
+1) The mismatch becomes a match
+2) Pattern P moves past the mismatched character.
+
+Good Suffix Heuristic
+
+Let t be substring of text T which is matched with substring of pattern P. Now we shift pattern until :
+1) Another occurrence of t in P matched with t in T.
+2) A prefix of P, which matches with suffix of t
+3) P moves past t
